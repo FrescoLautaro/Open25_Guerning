@@ -31,9 +31,9 @@ public class Venta {
         System.out.println("Productos: ");
 
         for (Producto p : listaVender) {
-            System.out.println(p.toString()); //Printeamos el to string de la clase desayuno del desayuno en el que nos encontramos del array de desayunos
+            System.out.println(p.toString()); //Printeamos el to string de la clase prodcuto
         }
-        System.out.println("Total .....$: " + this.CalcularTotal()); //Al final de todos los desayunos mostramos el total llamando a calcular importe
+        System.out.println("Total .....$: " + this.CalcularTotal()); 
         String dateTime = DateTimeFormatter.ofPattern("MMM dd yyyy, hh:mm:ss a").format(LocalDateTime.now());
         System.out.println(dateTime);
         System.out.println("----------------------------");
